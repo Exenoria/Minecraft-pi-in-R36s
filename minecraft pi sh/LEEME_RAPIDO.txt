@@ -1,0 +1,28 @@
+MINECRAFT PE PARA R36S - PAQUETE LISTO (ya trae tu binario "minecraftpe")
+=======================================================================
+
+COPIA ESTOS 3 ELEMENTOS a la SD2, dentro de la carpeta  /roms2/ports/
+    Minecraft PE.sh
+    Minecraft PE DIAG.sh
+    minecraftpe/            (carpeta completa)
+
+Tiene que quedar EXACTAMENTE asi en la tarjeta:
+    /roms2/ports/Minecraft PE.sh
+    /roms2/ports/Minecraft PE DIAG.sh
+    /roms2/ports/minecraftpe/minecraftpe        <- el juego (sin extension: es normal)
+    /roms2/ports/minecraftpe/controls.cfg
+    /roms2/ports/minecraftpe/data/...
+
+  * Copia el CONTENIDO del zip, no una carpeta contenedora extra.
+  * Reinicia EmulationStation para que aparezca en Ports > "Minecraft PE".
+
+SI NO ABRE (pantalla negra)
+  1. Abre Minecraft PE una vez y saca la SD. Mira en el PC:
+       /roms2/ports/minecraftpe_boot.txt   -> si existe, el lanzador SI se ejecuto
+       /roms2/ports/minecraftpe/log.txt    -> todo lo que paso dentro del juego
+  2. Si no hay nada o sigue negro: abre Ports > "Minecraft PE DIAG" (tarda unos
+     25 segundos) y mandame el archivo  minecraftpe/diagnostico.txt
+
+  OJO: si editas un .sh en Windows, guardalo con saltos de linea LF (Notepad++:
+  Editar > Conversion de fin de linea > Unix). Con CRLF el script NO arranca
+  y no deja ningun log.
